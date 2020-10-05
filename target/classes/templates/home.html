@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heart Signal - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="/static/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+<!--          <i class="fas fa-laugh-wink"></i>-->
+          <img src="/static/img/hearsignal_logo.png" style="width:50%;height:50%;" />
+        </div>
+        <div class="sidebar-brand-text mx-3">Heart Signal <sup></sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+<!--      <div class="sidebar-heading">-->
+<!--        Interface-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Nav Item - Pages Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">-->
+<!--          <i class="fas fa-fw fa-cog"></i>-->
+<!--          <span>Components</span>-->
+<!--        </a>-->
+<!--        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Custom Components:</h6>-->
+<!--            <a class="collapse-item" href="buttons.html">Buttons</a>-->
+<!--            <a class="collapse-item" href="cards.html">Cards</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Utilities Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">-->
+<!--          <i class="fas fa-fw fa-wrench"></i>-->
+<!--          <span>Utilities</span>-->
+<!--        </a>-->
+<!--        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Custom Utilities:</h6>-->
+<!--            <a class="collapse-item" href="utilities-color.html">Colors</a>-->
+<!--            <a class="collapse-item" href="utilities-border.html">Borders</a>-->
+<!--            <a class="collapse-item" href="utilities-animation.html">Animations</a>-->
+<!--            <a class="collapse-item" href="utilities-other.html">Other</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Divider &ndash;&gt;-->
+<!--      <hr class="sidebar-divider">-->
+
+<!--      &lt;!&ndash; Heading &ndash;&gt;-->
+<!--      <div class="sidebar-heading">-->
+<!--        Addons-->
+<!--      </div>-->
+
+<!--      &lt;!&ndash; Nav Item - Pages Collapse Menu &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">-->
+<!--          <i class="fas fa-fw fa-folder"></i>-->
+<!--          <span>Pages</span>-->
+<!--        </a>-->
+<!--        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">-->
+<!--          <div class="bg-white py-2 collapse-inner rounded">-->
+<!--            <h6 class="collapse-header">Login Screens:</h6>-->
+<!--            <a class="collapse-item" href="login.html">Login</a>-->
+<!--            <a class="collapse-item" href="register.html">Register</a>-->
+<!--            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>-->
+<!--            <div class="collapse-divider"></div>-->
+<!--            <h6 class="collapse-header">Other Pages:</h6>-->
+<!--            <a class="collapse-item" href="404.html">404 Page</a>-->
+<!--            <a class="collapse-item" href="blank.html">Blank Page</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Charts &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="charts.html">-->
+<!--          <i class="fas fa-fw fa-chart-area"></i>-->
+<!--          <span>Charts</span></a>-->
+<!--      </li>-->
+
+<!--      &lt;!&ndash; Nav Item - Tables &ndash;&gt;-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="tables.html">-->
+<!--          <i class="fas fa-fw fa-table"></i>-->
+<!--          <span>Tables</span></a>-->
+<!--      </li>-->
+
+      <!-- Divider -->
+<!--      <hr class="sidebar-divider d-none d-md-block">-->
+
+      <!-- Sidebar Toggler (Sidebar) -->
+<!--      <div class="text-center d-none d-md-inline">-->
+<!--        <button class="rounded-circle border-0" id="sidebarToggle"></button>-->
+<!--      </div>-->
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+<!--          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">-->
+<!--            <div class="input-group">-->
+<!--              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">-->
+<!--              <div class="input-group-append">-->
+<!--                <button class="btn btn-primary" type="button">-->
+<!--                  <i class="fas fa-search fa-sm"></i>-->
+<!--                </button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </form>-->
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+<!--            <li class="nav-item dropdown no-arrow mx-1">-->
+<!--              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                <i class="fas fa-bell fa-fw"></i>-->
+<!--                &lt;!&ndash; Counter - Alerts &ndash;&gt;-->
+<!--                <span class="badge badge-danger badge-counter">3+</span>-->
+<!--              </a>-->
+<!--              &lt;!&ndash; Dropdown - Alerts &ndash;&gt;-->
+<!--              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated&#45;&#45;grow-in" aria-labelledby="alertsDropdown">-->
+<!--                <h6 class="dropdown-header">-->
+<!--                  Alerts Center-->
+<!--                </h6>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="mr-3">-->
+<!--                    <div class="icon-circle bg-primary">-->
+<!--                      <i class="fas fa-file-alt text-white"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="small text-gray-500">December 12, 2019</div>-->
+<!--                    <span class="font-weight-bold">A new monthly report is ready to download!</span>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="mr-3">-->
+<!--                    <div class="icon-circle bg-success">-->
+<!--                      <i class="fas fa-donate text-white"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="small text-gray-500">December 7, 2019</div>-->
+<!--                    $290.29 has been deposited into your account!-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="mr-3">-->
+<!--                    <div class="icon-circle bg-warning">-->
+<!--                      <i class="fas fa-exclamation-triangle text-white"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="small text-gray-500">December 2, 2019</div>-->
+<!--                    Spending Alert: We've noticed unusually high spending for your account.-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>-->
+<!--              </div>-->
+<!--            </li>-->
+
+            <!-- Nav Item - Messages -->
+<!--            <li class="nav-item dropdown no-arrow mx-1">-->
+<!--              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                <i class="fas fa-envelope fa-fw"></i>-->
+<!--                &lt;!&ndash; Counter - Messages &ndash;&gt;-->
+<!--                <span class="badge badge-danger badge-counter">7</span>-->
+<!--              </a>-->
+<!--              &lt;!&ndash; Dropdown - Messages &ndash;&gt;-->
+<!--              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated&#45;&#45;grow-in" aria-labelledby="messagesDropdown">-->
+<!--                <h6 class="dropdown-header">-->
+<!--                  Message Center-->
+<!--                </h6>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="dropdown-list-image mr-3">-->
+<!--                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">-->
+<!--                    <div class="status-indicator bg-success"></div>-->
+<!--                  </div>-->
+<!--                  <div class="font-weight-bold">-->
+<!--                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>-->
+<!--                    <div class="small text-gray-500">Emily Fowler · 58m</div>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="dropdown-list-image mr-3">-->
+<!--                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">-->
+<!--                    <div class="status-indicator"></div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>-->
+<!--                    <div class="small text-gray-500">Jae Chun · 1d</div>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="dropdown-list-image mr-3">-->
+<!--                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">-->
+<!--                    <div class="status-indicator bg-warning"></div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>-->
+<!--                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="#">-->
+<!--                  <div class="dropdown-list-image mr-3">-->
+<!--                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">-->
+<!--                    <div class="status-indicator bg-success"></div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>-->
+<!--                    <div class="small text-gray-500">Chicken the Dog · 2w</div>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>-->
+<!--              </div>-->
+<!--            </li>-->
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="user-name">Valerie Luna</span>
+                <img class="img-profile rounded-circle" id="user-picture" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+<!--                <img class="img-profile rounded-circle" id="user-picture" src="https://lh3.googleusercontent.com/-WxaEb5HeOA8/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnm3N8F0z_UdsQywGOTphVK1Wqodg/photo.jpg">-->
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+<!--          <div class="d-sm-flex align-items-center justify-content-between mb-4">-->
+<!--            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>-->
+<!--            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
+<!--          </div>-->
+
+          <!-- Content Row -->
+<!--          <div class="row">-->
+
+<!--            &lt;!&ndash; Earnings (Monthly) Card Example &ndash;&gt;-->
+<!--            <div class="col-xl-3 col-md-6 mb-4">-->
+<!--              <div class="card border-left-primary shadow h-100 py-2">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="row no-gutters align-items-center">-->
+<!--                    <div class="col mr-2">-->
+<!--                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>-->
+<!--                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-auto">-->
+<!--                      <i class="fas fa-calendar fa-2x text-gray-300"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Earnings (Monthly) Card Example &ndash;&gt;-->
+<!--            <div class="col-xl-3 col-md-6 mb-4">-->
+<!--              <div class="card border-left-success shadow h-100 py-2">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="row no-gutters align-items-center">-->
+<!--                    <div class="col mr-2">-->
+<!--                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>-->
+<!--                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-auto">-->
+<!--                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Earnings (Monthly) Card Example &ndash;&gt;-->
+<!--            <div class="col-xl-3 col-md-6 mb-4">-->
+<!--              <div class="card border-left-info shadow h-100 py-2">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="row no-gutters align-items-center">-->
+<!--                    <div class="col mr-2">-->
+<!--                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>-->
+<!--                      <div class="row no-gutters align-items-center">-->
+<!--                        <div class="col-auto">-->
+<!--                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>-->
+<!--                        </div>-->
+<!--                        <div class="col">-->
+<!--                          <div class="progress progress-sm mr-2">-->
+<!--                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-auto">-->
+<!--                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Pending Requests Card Example &ndash;&gt;-->
+<!--            <div class="col-xl-3 col-md-6 mb-4">-->
+<!--              <div class="card border-left-warning shadow h-100 py-2">-->
+<!--                <div class="card-body">-->
+<!--                  <div class="row no-gutters align-items-center">-->
+<!--                    <div class="col mr-2">-->
+<!--                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>-->
+<!--                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-auto">-->
+<!--                      <i class="fas fa-comments fa-2x text-gray-300"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Heart Rate Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Heart Rate Overview</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+<!--                    <button id="heart-chart-btn" onclick="getAdditionalBeat()">update</button>-->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area" id="heartRateChartArea">
+                    <canvas id="heartRateChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Map</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div id="map" style="width: 100%; height: 350px; position: relative; overflow: hidden; background: url('https://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png');">
+                    <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; cursor: url('https://i1.daumcdn.net/dmaps/apis/cursor/openhand.cur.ico') 7 5, url('https://i1.daumcdn.net/dmaps/apis/cursor/openhand.cur.ico'), default;">
+                      <div style="position: absolute; left: -190px; top: 69px;">
+                        <div style="position: absolute; z-index: 0;">
+
+                        </div>
+                        <div style="position: absolute; z-index: 1; left: 0px; top: 0px;">
+                          <img src="https://map1.daumcdn.net/map_2d_hd/1912uow/L3/215/741.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 20px; top: 198px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map2.daumcdn.net/map_2d_hd/1912uow/L3/215/742.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 276px; top: 198px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map1.daumcdn.net/map_2d_hd/1912uow/L3/216/741.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 20px; top: -58px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map2.daumcdn.net/map_2d_hd/1912uow/L3/216/742.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 276px; top: -58px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map1.daumcdn.net/map_2d_hd/1912uow/L3/217/741.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 20px; top: -314px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map2.daumcdn.net/map_2d_hd/1912uow/L3/217/742.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 276px; top: -314px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map3.daumcdn.net/map_2d_hd/1912uow/L3/215/743.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 532px; top: 198px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map3.daumcdn.net/map_2d_hd/1912uow/L3/216/743.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 532px; top: -58px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map3.daumcdn.net/map_2d_hd/1912uow/L3/217/743.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 532px; top: -314px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map0.daumcdn.net/map_2d_hd/1912uow/L3/215/744.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 788px; top: 198px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map0.daumcdn.net/map_2d_hd/1912uow/L3/216/744.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 788px; top: -58px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                          <img src="https://map0.daumcdn.net/map_2d_hd/1912uow/L3/217/744.png" alt="" draggable="false" style="position: absolute; user-select: none; -webkit-user-drag: none; min-width: 0px; min-height: 0px; max-width: none; max-height: none; left: 788px; top: -314px; opacity: 1; transition-property: opacity; transition-duration: 0.2s; transition-timing-function: ease; width: 256px; height: 256px;">
+                        </div>
+                        <div style="position: absolute; z-index: 1;">
+
+                        </div>
+                        <div style="position: absolute; z-index: 1; width: 591px; height: 350px;">
+
+                        </div>
+                        <div style="position: absolute; z-index: 1;">
+                          <svg version="1.1" style="stroke: none; stroke-dashoffset: 0.5; stroke-linejoin: round; fill: none; transform: translateZ(0px); position: absolute; left: -992px; top: -769px; width: 2955px; height: 1750px;" viewBox="0 0 2955 1750">
+                            <defs></defs>
+                          </svg>
+                        </div>
+                        <div style="position: absolute; z-index: 1; width: 100%; height: 0px; transform: translateZ(0px);">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div style="position: absolute; cursor: default; z-index: 1; margin: 0px 6px; height: 19px; line-height: 14px; left: 0px; bottom: 0px; color: rgb(0, 0, 0);">
+                      <div style="color: rgb(0, 0, 0); text-align: center; font-size: 10px; float: left;">
+                        <div style="float: left; margin: 2px 3px 0px 4px; height: 6px; transition: width 0.1s ease 0s; border-top: none rgb(0, 0, 0); border-right: 2px solid rgb(0, 0, 0); border-bottom: 2px solid rgb(0, 0, 0); border-left: 2px solid rgb(0, 0, 0); border-image: initial; width: 46px;">
+
+                        </div>
+                        <div style="float: left; margin: 0px 4px 0px 0px; font-family: AppleSDGothicNeo-Regular, 돋움, dotum, sans-serif; font-weight: bold; color: rgb(0, 0, 0);">
+                          50m
+                        </div>
+                      </div>
+                      <div style="margin: 0px 4px; float: left;">
+                        <a target="_blank" href="http://map.kakao.com/" title="Kakao 지도로 보시려면 클릭하세요." style="float: left; width: 32px; height: 10px;">
+                          <img src="https://t1.daumcdn.net/mapjsapi/images/2x/m_bi_b.png" alt="Kakao 지도로 이동" style="float: left; width: 32px; height: 10px; border: none;">
+                        </a>
+                        <div style="font: 11px / 11px Arial, Tahoma, Dotum, sans-serif; float: left;">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div style="cursor: auto; position: absolute; z-index: 2; left: 0px; top: 0px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; SangMyung Duguen 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="/static/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="/static/vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+<!--  <script src="/static/js/demo/chart-area-demo.js"></script>-->
+  <script src="/static/js/demo/chart-pie-demo.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=29775eb2bcdb5a3bf0a74914a0b560c2&libraries=services"></script>
+  <script th:inline="javascript">
+    var user = [[${user}]];
+    var email = user.email;
+    var name = user.name;
+    var picture = user.image;
+    var lat = user.latitude;
+    var lng = user.longitude;
+    var beatlist = user.beatList;
+    var address = user.address;
+
+    $(document).ready(function(){
+      document.getElementById("user-picture").src=picture;
+      document.getElementById("user-name").innerHTML=name;
+      getAdditionalBeat();
+    });
+
+    // kakao map
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new kakao.maps.LatLng(lat, lng), //지도의 중심좌표.
+      level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+    var markerPosition = new kakao.maps.LatLng(lat, lng);
+
+    // 마커를 생성합니다
+    var centermarker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+    centermarker.setMap(map);
+
+    var iwContent = address;
+    var iwPosition = new kakao.maps.LatLng(lat, lng);
+
+    var infowindow = new kakao.maps.InfoWindow({
+      position : iwPosition,
+      content : iwContent
+    });
+
+    infowindow.open(map, centermarker);
+
+    // heart rate chart
+    var ctx = document.getElementById('heartRateChart').getContext('2d');
+
+    var config = {
+      type: 'line',
+      data: {
+        labels: [],
+        datasets: [{
+          label: 'heart beat',
+          // data: [12, 19, 3, 5, 2, 3],
+          data: [],
+          // data: [100, 200, 150],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    };
+    var myChart = new Chart(ctx, config);
+
+    function heartChartSuccessCallback(cb){
+      cb();
+    }
+    function getDateFormat(arr){
+        var year = arr[0];
+        var month = arr[1];
+        var date = arr[2];
+        var hour = arr[3];
+        var minute = arr[4];
+        var second = arr[5];
+        return new Date(year, month-1, date, hour, minute, second);
+    }
+
+    var lastTime = new Date(1999,0,1,0,0,0);
+    function getAdditionalBeat(){
+      const urlPath = "/api/user/" + email;
+      $.ajax({
+        type: "GET",
+        contentType: "application/json",
+        url: urlPath,
+        data: null,
+        dataType: 'json',
+        cache: false,
+        timeout: 600000,
+        success: function(result){
+          console.log("ajax success: " + result);
+          if(config.data.labels.length == 0){
+            for(var i=0;i<result.beatList.length;i++){
+              config.data.labels.push(result.beatList[i].time);
+              config.data.datasets[0].data.push(result.beatList[i].beat);
+              if(lastTime < getDateFormat(result.beatList[i].time)){
+                lastTime = getDateFormat(result.beatList[i].time);
+              }
+            }
+            myChart.update();
+          }
+          else{
+            for(var i=0;i<result.beatList.length;i++){
+              var time = getDateFormat(result.beatList[i].time);
+              if(lastTime < time){
+                lastTime = time;
+                config.data.labels.push(result.beatList[i].time);
+                config.data.datasets[0].data.push(result.beatList[i].beat);
+              }
+            }
+            myChart.update();
+          }
+
+          heartChartSuccessCallback(function(){
+            setTimeout(getAdditionalBeat, 1000);
+          });
+        },
+        error: function(error){
+          console.log("ajax error: " + error);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
